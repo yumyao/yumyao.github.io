@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graduate Student Application | HBIS Lab</title>
+  <meta name="description" content="Graduate student application for the Human Biomechanics & Intelligent Systems Laboratory at the University of New Brunswick.">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --panel: #f7f8fa;
+      --line: #dfe3e7;
+      --text: #22262b;
+      --muted: #66707a;
+      --accent: #1d5f8a;
+      --accent2: #0f7c82;
+      --soft: #f4f7f9;
+      --max: 900px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 15px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .nav a {
+      font-size: 14px;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 42px 22px 70px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 0 0 7px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .info-box {
+      border: 1px solid var(--line);
+      background: var(--soft);
+      padding: 20px 22px;
+      border-radius: 6px;
+      margin: 0 0 30px;
+    }
+
+    .info-box h2 {
+      font-size: 21px;
+      margin: 0 0 12px;
+    }
+
+    .info-box p {
+      margin: 8px 0;
+    }
+
+    .resource-list {
+      margin: 13px 0 0;
+      padding-left: 20px;
+    }
+
+    .resource-list li {
+      margin-bottom: 8px;
+    }
+
+    .funding-note {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--accent2);
+      background: #fff;
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0 0 28px;
+    }
+
+    legend {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 0 0 6px;
+    }
+
+    .help {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 14px;
+      padding: 10px 11px;
+      border: 1px solid #cfd5da;
+      border-radius: 5px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 115px;
+      resize: vertical;
+    }
+
+    .choice-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .choice {
+      border: 1px solid #cfd5da;
+      border-radius: 5px;
+      padding: 9px 12px;
+      background: #fff;
+      min-width: 145px;
+    }
+
+    .upload {
+      border: 1px dashed #99a3ab;
+      border-radius: 5px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    input[type="file"] {
+      font-family: "Times New Roman", Times, serif;
+      max-width: 100%;
+    }
+
+    .form-group {
+      margin-bottom: 19px;
+    }
+
+    .submit {
+      appearance: none;
+      border: 0;
+      background: #22262b;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .submit:hover {
+      opacity: 0.9;
+    }
+
+    .submission-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      padding: 22px 0 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .grid2 {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="nav">
+      <div class="brand">HBIS Lab · Graduate Student Application</div>
+      <a href="HBISLab.html">← Back to HBIS Lab</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Graduate Student Application</h1>
+    <div class="subtitle">
+      Human Biomechanics &amp; Intelligent Systems Laboratory · University of New Brunswick
+    </div>
+
+    <section class="info-box">
+      <h2>Graduate Program, Scholarships &amp; Funding</h2>
+
+      <p>
+        Prospective graduate students should review the relevant UNB graduate program,
+        scholarship, funding, tuition, and academic regulations before applying to HBIS Lab.
+      </p>
+
+      <ul class="resource-list">
+        <li>
+          <strong>Graduate Program:</strong>
+          <a href="https://www.unb.ca/gradstudies/programs/systems-engineering.html" target="_blank" rel="noopener">
+            Systems Engineering Graduate Program
+          </a>
+        </li>
+
+        <li>
+          <strong>Scholarships:</strong>
+          <a href="https://www.unb.ca/gradstudies/current/financial/scholarships/" target="_blank" rel="noopener">
+            UNB Graduate Scholarships
+          </a>
+        </li>
+
+        <li>
+          <strong>New Funding Programs:</strong>
+          <a href="https://www.unb.ca/gradstudies/current/financial/scholarships/new-funding-programs.html" target="_blank" rel="noopener">
+            New Student Funding Programs
+          </a>
+        </li>
+
+        <li>
+          <strong>Graduate Regulations &amp; Guidelines:</strong>
+          <a href="https://www.unb.ca/gradstudies/current/resources/regulations-and-guidelines/graduate-manual.html" target="_blank" rel="noopener">
+            UNB Graduate Manual
+          </a>
+        </li>
+      </ul>
+
+
+      <div class="funding-note">
+        <strong>HBIS Graduate Financial Support:</strong>
+        <ul class="resource-list">
+          <li><strong>MASc students:</strong> financial support of <strong>$12,000/year</strong>, guaranteed for two years.</li>
+          <li><strong>PhD students:</strong> financial support of <strong>$20,000/year</strong>, guaranteed for three years.</li>
+        </ul>
+      </div>
+
+      <div class="funding-note">
+        <strong>International PhD students:</strong>
+        Eligible international PhD students automatically receive the
+        <strong>PhD International Subsidy</strong> under
+        <strong>New Student Funding</strong>.
+      </div>
+    </section>
+
+    <section class="info-box" style="background:#fff; padding:0; border:0;">
+      <h2 style="margin-bottom:14px;">Application Form</h2>
+
+      <iframe
+        src="https://tally.so/r/68EKvN?transparentBackground=1"
+        width="100%"
+        height="1600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="HBIS Graduate Student Application">
+      </iframe>
+    </section>
+
+    <footer>
+      © 2026 Yumeng Yao · Human Biomechanics &amp; Intelligent Systems Laboratory
+    </footer>
+
+  </main>
+</body>
+</html>
