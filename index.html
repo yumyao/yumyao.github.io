@@ -273,6 +273,24 @@
       border-radius: 7px;
       padding: 17px 18px;
         }
+    
+    .facility-source {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 4px 0 12px;
+}
+
+.equipment-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.equipment-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.45;
+}
 #research .card:nth-child(1) { background: #f3f8fc; }
 #research .card:nth-child(2) { background: #f3faf7; }
 #research .card:nth-child(3) { background: #fffaf0; }
@@ -413,6 +431,10 @@
         Department of Engineering<br>
         University of New Brunswick<br>
         Saint John, New Brunswick, Canada<br>
+        <span style="display:block; margin-top:6px;">
+        Affiliate Assistant Professor<br>
+        Concordia University
+        </span>
         <a href="mailto:yumeng.yao@unb.ca">yumeng.yao@unb.ca</a>
       </p>
 
@@ -478,36 +500,75 @@
         </div>
       </section>
 
-      <section id="facilities">
-        <h2>Research Ecosystem &amp; Facilities</h2>
+   <section id="facilities">
+  <h2>Facilities &amp; Research Ecosystem</h2>
 
-        <p>
-          HBIS research is supported by in-lab capabilities, shared university infrastructure,
-          and collaborative research facilities.
-        </p>
+  <p>
+    HBIS research is supported by in-lab equipment and complementary research infrastructure through collaborations with UNB and Concordia University.
+  </p>
 
-        <div class="grid2">
-          <div class="card">
-            <h3>HBIS Laboratory</h3>
-            <p>Wearable sensing · biomechanics experiments · computational modeling · AI · embedded control · device prototyping</p>
-          </div>
+  <div class="grid2">
 
-          <div class="card">
-            <h3>Biomedical &amp; Rehabilitation Infrastructure</h3>
-            <p>Motion analysis · gait and mobility assessment · neuromuscular sensing · rehabilitation technologies · human movement studies</p>
-          </div>
+    <div class="card">
+      <h3>HBIS Laboratory</h3>
+      <p class="facility-source">
+        Human Biomechanics &amp; Intelligent Systems Lab
+      </p>
 
-          <div class="card">
-            <h3>Human Dynamics &amp; Vibration Infrastructure</h3>
-            <p>Whole-body and hand-transmitted vibration · seating dynamics · dynamic human response · protective systems</p>
-          </div>
+      <ul class="equipment-list">
+        <li>Robotic Manipulators</li>
+        <li>Delsys EMG System</li>
+        <li>IMU System</li>
+        <li>FBG-Based Human–Machine Interaction Measurement System</li>
+        <li>High-Performance Computing Workstation</li>
+      </ul>
+    </div>
 
-          <div class="card">
-            <h3>Design &amp; Prototyping</h3>
-            <p>Computational design · sensor-integrated devices · additive fabrication · rapid prototyping</p>
-          </div>
-        </div>
-      </section>
+    <div class="card">
+      <h3>Biomedical &amp; Rehabilitation</h3>
+      <p class="facility-source">
+        Collaborative Facilities · IBME, University of New Brunswick
+      </p>
+
+      <ul class="equipment-list">
+        <li>CAREN Extended System</li>
+        <li>Instrumented Split-Belt Treadmill</li>
+        <li>Motion Capture System</li>
+        <li>ZeroG Dynamic Body-Weight Support System</li>
+        <li>Rehabilitation &amp; Assistive Technology Platforms</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Human Dynamics &amp; Vibration</h3>
+      <p class="facility-source">
+        Collaborative Facilities · CONCAVE, Concordia University
+      </p>
+
+      <ul class="equipment-list">
+        <li>Whole-Body Vibration Simulator</li>
+        <li>MTS Test System</li>
+        <li>Hand–Arm Vibration Shaker Systems</li>
+        <li>Tekscan Hand and Seat Pressure Measurement Systems</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Design &amp; Prototyping</h3>
+      <p class="facility-source">
+        Collaborative Facilities · DAM Lab, Concordia University
+      </p>
+
+      <ul class="equipment-list">
+        <li>KMR iiwa Robotic Platform</li>
+        <li>Markforged Mark Two</li>
+        <li>ProJet MJP 2500</li>
+        <li>Formech Compac Mini</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
       <section id="publications">
         <h2>Selected Publications</h2>
